@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+    <title>test</title>
+
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li>
+            <a href="/index.html">
+              <span class="icon is-small">
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </span>
+              <span>Accueil des Patates</span>
+            </a>
+          </li>
+          <li>
+            <a href="/test.html">
+              <span class="icon is-small">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              <span>page test</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+              </span>
+              <span>Autre page</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="column">
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button
+              class="button"
+              aria-haspopup="true"
+              aria-controls="dropdown-menu"
+            >
+              <span>Dropdown pour les Patates</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item"> Dropdown item </a>
+              <a class="dropdown-item"> Other dropdown item </a>
+              <a href="#" class="dropdown-item is-active">
+                Active dropdown item
+              </a>
+              <a href="#" class="dropdown-item"> Other dropdown item </a>
+              <hr class="dropdown-divider" />
+              <a href="#" class="dropdown-item"> With a divider </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="buttons" data-square>
+            <button class="button">Par ici Patate!</button>
+          </div>
+          <div class="buttons is-hidden">
+            <button class="button is-link">Tu veux voir?</button>
+            <button class="button is-info">Tu veux voir?</button>
+            <button class="button is-success">Tu veux voir?</button>
+            <button class="button is-warning">Tu veux voir?</button>
+            <button class="button is-danger">Tu veux voir?</button>
+          </div>
+
+          <div class="buttons" data-round>
+            <button class="button is-rounded">ici aussi!</button>
+          </div>
+          <div class="buttons is-hidden">
+            <button class="button is-primary is-rounded">Tu veux voir?</button>
+            <button class="button is-link is-rounded">Tu veux voir?</button>
+            <button class="button is-info is-rounded">Tu veux voir?</button>
+            <button class="button is-success is-rounded">Tu veux voir?</button>
+            <button class="button is-danger is-rounded">Tu veux voir?</button>
+          </div>
+        </div>
+        <div class="column">
+          <article class="message is-link is-hidden">
+            <div class="message-header">
+              <p>Pour la Patate</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body">
+              Click sur un bouton pour le voir en <strong>loading</strong>..
+              Biensure les <strong>Patates</strong> chaudes doivent clicker plus
+              doucement a fin de pourvoir observer ce phénomène.<br /><br />
+              <em>Avec les remerciments du département des plaintes!</em>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

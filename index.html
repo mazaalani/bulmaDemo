@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+    <title>Bulma Demo</title>
+
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container custom-container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="">
+            <h1 class="title">Bonjour l'ami</h1>
+            <p class="subtitle">
+              Ce site est dédié aux membres <strong>VIP</strong>!
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <form class="box" data-blank>
+            <div class="field">
+              <label class="label">Ton Nom</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="e.g. Patate"
+                  data-input
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right is-hidden" data-erricon>
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <p class="help is-danger is-hidden" data-errmsg>
+                  Tu n'est pas une Patate!
+                </p>
+              </div>
+            </div>
+
+            <button class="button is-primary" data-submit>Go!</button>
+          </form>
+        </div>
+      </div>
+      <!-- notification -->
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+          <div class="notification is-danger is-hidden">
+            <button class="delete"></button>
+            Sérrieusement, est tu une vraie Patate ou pas???
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal Pour Patate</p>
+            <button class="delete" aria-label="close" data-modal-btn></button>
+          </header>
+          <section class="modal-card-body">
+            <h1 class="title">Bonjour Patate!</h1>
+            <p class="subtitle">
+              Ceci est une modale avec validation pour te faire plaisir Patate!
+            </p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success" data-modal-btn="next">
+              L'autre Page
+            </button>
+            <button class="button" data-modal-btn>Annuler</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
